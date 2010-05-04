@@ -244,7 +244,7 @@ module RiCal
         end
         export_stream.puts("END:VCALENDAR")
         if to
-          nil
+          to.flush
         else
           export_stream.string
         end
